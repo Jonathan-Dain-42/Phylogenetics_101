@@ -1,0 +1,12 @@
+---
+title: "Week One/Lecture One"
+description: "The course material for week one. We take time to get setup in Rstudio and learn the basics of working with trees"
+author:
+  - name: Jonathan Dain
+    url: https://jonathan-dain-42.github.io/The-Duck-Tapes/
+    affiliation: VirusPlusLab at UMass Boston
+    affiliation-url: https://www.theviruspluslab.com/
+date: 08-02-2024
+categories: [Lecture_1] # self-defined categories
+draft: FALSE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---

@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/lectures.html",
+    "items": [
+      "/about.html",
+      "/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/Lectures/post_template.html"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Phylogenetics 101"
+  navbar:
+    right:
+      - href: about.qmd
+        text: Course Resources
+      - href: index.qmd
+        text: Start Here
+      - href: posts.qmd
+        text: Lectures
+
+format:
+  html:
+    theme: Flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+

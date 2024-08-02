@@ -1,0 +1,21 @@
+---
+title: "Welcome"
+---
+
+![Yours instructor on Appledore Island, where Great Black-Back Gulls and Herring Gulls breed in massive numbers](Me_on_Appledore.jpeg)
+
+Hello there my dear friends and welcome to the world trees and data.
+
+### A little about me:
+
+My name is Jonathan Dain, and I am a Ph.D. student at UMASS Boston working in the VirusPlusLab led by Dr. Nichola Hill. We are a "Disease Ecology" lab focused on answering questions about the recent avian influenza outbreaks in wild birds. My personal interests lie at the intersection of the host virus dynamic. What are the ecological and phylogenetic drivers of avian influenza in the current North American outbreak? What can we learn from the host about infection with this virus in terms of the disease phenotype and immune response? What can we learn from the viral genomes about spread of the virus, host factors affecting spread and much more? Why do some bird species get infected with the virus and die very quickly while others are asymptomatic? How much does the host gene expression impact the spread of this virus into new areas and populations? If you are interested in more of my research check our my academic website [here](https://jonathan-dain-42.github.io/The-Duck-Tapes/).
+
+### In this course:
+
+Probaly of more interest to you is this course, well let's get started. The foremost goal of this course is to give you the skills necessary to be a life long learner of phylogenetics both inside and outside the R computational environment. In this course we will explore the following topics:
+
+-   The structure and format of phylogenetic trees.
+-   How to reconstruct phylogenetic trees using both maximum likelihood and bayesian frameworks.
+-   The analysis of phenotypic data along our phylogeny using various models of phenotypic evolution.
+-   How to create some beautiful paper ready phylograms.
+-   The core concepts and methods of phylodynamics.

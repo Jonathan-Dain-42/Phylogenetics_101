@@ -1,0 +1,32 @@
+---
+title: "Course Resources"
+lightbox: True
+---
+
+### Welcome to the world of trees and data! 
+
+I have written extensively on different resources pertaining to working with phylogenetic data and trees on my research website [(here)](https://jonathan-dain-42.github.io/The-Duck-Tapes/Blog_Posts/2024-06-27/2024-06-27.html). Those interested should check it out and explore the rest of the blog posts there (there are phylogenies). 
+
+However for the sake of streamlining this course I will point you to three key resources if you are starting from ground zero or the root of the tree :)
+
+### In terms of Books:
+
+-   [Learning From Trees](https://lukejharmon.github.io/pcm/) by Luke Harmon. [An excellent book on learning the basics and theory in the field of phylogenetic comparative methods.]{.underline}
+
+-   [Phylogenetic Comparative Methods in R](https://peerj.com/articles/16505/) by Liam Revell and Luke Harmon. [An amazing R package that is constantly "evolving" and gaining new functions all the time. This package also makes plotting phylogenies wonderful]{.underline}
+
+-   [The Phytools Blog](http://blog.phytools.org/) by Liam Revell [An awesome way to learn more about working with the R package Phytools, in addition to keeping up to date with the new functions and tools]{.underline}
+
+-   [Decoding Genomes: From Sequences to Phylodynamics](https://decodinggenomes.org/) by Tanja Stadler, Carsten Magnus, Timothy Vaughan, Joëlle Barido-Sottani, Veronika Bošková, Jana S. Huisman, Jūlija Pečerska. [A recent book but from the intro chapters that I have read so far it is very approachable and informative. I love the idea of explaining the whole workflow.]{.underline}
+
+### Course Structure
+
+This course will be structured into 12 weeks each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be assigned book chapters each week and I recommend reading them before beginning the material each week. 
+
+By the end of the course you should feel comfortable with the following tasks:  
+
+-   Loading phylogenetic data into the R computing environment and plotting it in various formats. 
+-   The basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting. 
+-   Utilizing various methods from the domain of "Phylogenetic Comparative Methods" to answer questions about phenotypic evolution. 
+-   Have some fun figures to show your friends and family.
+-   A new appreciation for the world around you and how it all fits together. 
