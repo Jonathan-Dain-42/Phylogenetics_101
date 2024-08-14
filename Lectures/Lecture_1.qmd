@@ -10,3 +10,142 @@ date: 08-02-2024
 categories: [Lecture_1] # self-defined categories
 draft: FALSE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
+
+```{r}
+#| echo: false
+# For Instructor Setup:
+pacman::p_load(phytools,geiger,ggplot2,tidyverse,SpeciesClassifyR)
+```
+
+
+# Welcome to week one:
+
+The goals of this week are as follows:  
+
+-   Install Rstudio or update it if needed.
+-   Install the R packages necessary for this course. 
+-   Learn what phylogenetic trees represent.
+-   Build our own mock phylogenetic tree from scratch.
+
+## Installing Rstudio:
+
+First off, what even is Rstudio and R?  
+
+[R](https://www.r-project.org/) is a computing language that is geared towards statistics (though it can do much more). R has an amazing team of developers through the Comprehensive R Archive Network [(CRAN)](https://cran.r-project.org/). Rstudio is a graphical user interface (GUI) that makes working in the R computational environment easier and cleaner. 
+
+Instructions for downloading R and Rstudio can be found [here](https://rstudio-education.github.io/hopr/starting.html#how-to-download-and-install-r) in an excerpt from the book "Hands on Programming with R" by Garrett Grolemund. Just download the appropriate verion for your operatig system and you should be setup to go. 
+
+## Installing the R packages helpful for the course:
+
+Ok what is a package?  
+
+A package is a group of R functions that a developer has put together to help make various tasks or types of analysis standardized in both their documentation and functions. Most packages are hosted on CRAN although some are hosted on github, which only means they need to be installed slightly differently. 
+
+So let's download some functions and see what they are about. To begin let's get a R package that helps make installing the rest of our packages much easier. 
+
+```{r - setup}
+#| eval: false
+# Let's install the R package "pacman"
+install.packages("pacman")
+
+#Load the package with 
+library(pacman)
+```
+
+Pacman is a great function because "normally" you would need to install a package with `install.packages()` and then load them with `library()`. With Pacman when you use `pacman::p_load()`, it combines the installation and loading step into one. This function call checks to see if you have a package, installs the package if you don't already have it, and then loads the package for you. 
+
+So let's install the following packages with `pacman::p_load()`. 
+
+```{r - instal packages}
+#| eval: false 
+
+pacman::p_load("phytools", # <- our main package for phylogentics
+               "tidyverse", # <- a amazing package for data wrangling and much more. 
+               "ggplot2", # <- an excellent package for plotting data. 
+               "geiger") # <- another package needed for dealing with phylogenies. 
+
+# Additionally we will install a R package that I built
+# that helps us deal with bird taxonomic names. 
+pacman::p_install_gh("Jonathan-Dain-42/SpeciesClassifyR")
+
+
+```
+
+Ok awesome so now all of these packages are installed and loaded into our R environment. Let's move on to something that actually deals with a tree. 
+
+## Your first tree:
+
+Ok imagine the following scenario. Someone asked your to plot the relationship between a dog, a cat, a duck, and a human. 
+
+Well you might imagine that the dog and cat are relatively closely related. The human would have more in common with the dog and cat than the bird. You might draw something like this:
+
+![My silly handrawn tree]()
+
+That looks nice but how do we get that into a computer? Luckly for us some really smart people have developed a way to encode that information on relatedness into something called a Newick String. Which was developed by Joseph Felsenstein. We can make our own tree in newick format as follows:
+```{r - make a tree}
+our_tree <- phytools::read.newick(text = "(Duck,(Human,(Dog,Cat)));")
+```
+
+Notice that the string works from the closest related organisms in the innermost parenthesis and then working outword. Let's take a look at the structure of this tree to really see the inside of the object. 
+
+```{r - look at its sturcture}
+print(our_tree)
+str(our_tree)
+```
+These "trees" are really just a series of lists within lists. There are edges that connect nodes (both internal and terminal), there are tip.labels that contain the label of the "leafs" of the tree, and finally there are Nnodes which are the internal nodes of the tree. Notice that a tree will always have a number of nodes that equals ntips - 1. 
+
+Ok let's actually plot it - the fun part of making any tree - using functions in `phytools`. Dr. Revell's package provides and incredible array of plotting types lets use `plotTree()` for now. 
+
+```{r - first plot}
+phytools::plotTree(tree = our_tree,lwd=5)
+```
+
+Wow that looks pretty nice! Lets make it look even better. I will just do a few simple things and then comment what I am doing to get you started. 
+
+```{r - final plot}
+plotTree(tree = our_tree, #our tree
+         lwd=6, # changed the line width setting
+         ftype="i") # made the font italics. 
+
+#now I am goint to save the x/y coordinates of the tree
+pp <- pp<-get("last_plot.phylo",envir=.PlotPhyloEnv)
+
+# now plot another tree ontop of our first one to make an outline affect. 
+plotTree(tree = our_tree, # again our tree
+         lwd=3, # change the line width
+         color="grey", # make it a specific color
+         add=T, #plot it on top of our existing plot
+         xlim=pp$x.lim, #use the coordinates for the other 
+         ylim=pp$y.lim, # use the coordinates for the other 
+         ftype="off") # turn off the text on tip.labels
+
+# add a little label. Don't worry we will learn to do this
+mtext(text = "Figure 1: 'Our silly first tree'",side = 1,
+      line = -3.5,
+      adj = .5)
+
+```
+## Closing Remarks: 
+
+This was week one! Wow so simple right? Yes it was thats the beauty of it. We will begin to work with much more complicated material in due time. For now relax and take it all in. 
+
+**Read Chapters 1 of "Learning from Trees" and Chapter 1 of "Phytools" before next time.**
+
+## Challenge problem: 
+
+```{r}
+#| eval: true
+#| echo: false
+data("vertebrate.tree")
+#plotTree(ladderize(vertebrate.tree))
+vertebrate.tree$tip.label |> sort()-> challenge.names
+```
+Can you create a phylogeny of the following taxa using a newick string? 
+
+Here are the names you should use. I left them in their latin form just for fun. I would recommend Googling them to find their identity. 
+
+```{r}
+challenge.names
+```
+
+

@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jonathan Dain">
-<meta name="dcterms.date" content="2022-10-24">
-<meta name="description" content="blog post description (appears underneath the title in smaller text) which is included on the listing page">
+<meta name="dcterms.date" content="2024-08-02">
+<meta name="description" content="The course material for week one. We take time to get setup in Rstudio and learn the basics of working with trees">
 
-<title>Phylogenetics 101 - blog post title</title>
+<title>Phylogenetics 101 - Week One/Lecture One</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,22 +149,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome-to-week-one" id="toc-welcome-to-week-one" class="nav-link active" data-scroll-target="#welcome-to-week-one">Welcome to week one:</a>
+  <ul class="collapse">
+  <li><a href="#installing-rstudio" id="toc-installing-rstudio" class="nav-link" data-scroll-target="#installing-rstudio">Installing Rstudio:</a></li>
+  <li><a href="#installing-the-r-packages-helpful-for-the-course" id="toc-installing-the-r-packages-helpful-for-the-course" class="nav-link" data-scroll-target="#installing-the-r-packages-helpful-for-the-course">Installing the R packages helpful for the course:</a></li>
+  <li><a href="#your-first-tree" id="toc-your-first-tree" class="nav-link" data-scroll-target="#your-first-tree">Your first tree:</a></li>
+  <li><a href="#closing-remarks" id="toc-closing-remarks" class="nav-link" data-scroll-target="#closing-remarks">Closing Remarks:</a></li>
+  <li><a href="#challenge-problem" id="toc-challenge-problem" class="nav-link" data-scroll-target="#challenge-problem">Challenge problem:</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">blog post title</h1>
+<h1 class="title">Week One/Lecture One</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">All</div>
+    <div class="quarto-category">Lecture_1</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    blog post description (appears underneath the title in smaller text) which is included on the listing page
+    The course material for week one. We take time to get setup in Rstudio and learn the basics of working with trees
   </div>
 </div>
 
@@ -156,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 24, 2022</p>
+      <p class="date">August 2, 2024</p>
     </div>
   </div>
   
@@ -168,8 +215,150 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="welcome-to-week-one" class="level1">
+<h1>Welcome to week one:</h1>
+<p>The goals of this week are as follows:</p>
+<ul>
+<li>Install Rstudio or update it if needed.</li>
+<li>Install the R packages necessary for this course.</li>
+<li>Learn what phylogenetic trees represent.</li>
+<li>Build our own mock phylogenetic tree from scratch.</li>
+</ul>
+<section id="installing-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="installing-rstudio">Installing Rstudio:</h2>
+<p>First off, what even is Rstudio and R?</p>
+<p><a href="https://www.r-project.org/">R</a> is a computing language that is geared towards statistics (though it can do much more). R has an amazing team of developers through the Comprehensive R Archive Network <a href="https://cran.r-project.org/">(CRAN)</a>. Rstudio is a graphical user interface (GUI) that makes working in the R computational environment easier and cleaner.</p>
+<p>Instructions for downloading R and Rstudio can be found <a href="https://rstudio-education.github.io/hopr/starting.html#how-to-download-and-install-r">here</a> in an excerpt from the book “Hands on Programming with R” by Garrett Grolemund. Just download the appropriate verion for your operatig system and you should be setup to go.</p>
+</section>
+<section id="installing-the-r-packages-helpful-for-the-course" class="level2">
+<h2 class="anchored" data-anchor-id="installing-the-r-packages-helpful-for-the-course">Installing the R packages helpful for the course:</h2>
+<p>Ok what is a package?</p>
+<p>A package is a group of R functions that a developer has put together to help make various tasks or types of analysis standardized in both their documentation and functions. Most packages are hosted on CRAN although some are hosted on github, which only means they need to be installed slightly differently.</p>
+<p>So let’s download some functions and see what they are about. To begin let’s get a R package that helps make installing the rest of our packages much easier.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's install the R package "pacman"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pacman"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Load the package with </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pacman)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Pacman is a great function because “normally” you would need to install a package with <code>install.packages()</code> and then load them with <code>library()</code>. With Pacman when you use <code>pacman::p_load()</code>, it combines the installation and loading step into one. This function call checks to see if you have a package, installs the package if you don’t already have it, and then loads the package for you.</p>
+<p>So let’s install the following packages with <code>pacman::p_load()</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(<span class="st">"phytools"</span>, <span class="co"># &lt;- our main package for phylogentics</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>               <span class="st">"tidyverse"</span>, <span class="co"># &lt;- a amazing package for data wrangling and much more. </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>               <span class="st">"ggplot2"</span>, <span class="co"># &lt;- an excellent package for plotting data. </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>               <span class="st">"geiger"</span>) <span class="co"># &lt;- another package needed for dealing with phylogenies. </span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Additionally we will install a R package that I built</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># that helps us deal with bird taxonomic names. </span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_install_gh</span>(<span class="st">"Jonathan-Dain-42/SpeciesClassifyR"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ok awesome so now all of these packages are installed and loaded into our R environment. Let’s move on to something that actually deals with a tree.</p>
+</section>
+<section id="your-first-tree" class="level2">
+<h2 class="anchored" data-anchor-id="your-first-tree">Your first tree:</h2>
+<p>Ok imagine the following scenario. Someone asked your to plot the relationship between a dog, a cat, a duck, and a human.</p>
+<p>Well you might imagine that the dog and cat are relatively closely related. The human would have more in common with the dog and cat than the bird. You might draw something like this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src=".png" class="img-fluid figure-img"></p>
+<figcaption>My silly handrawn tree</figcaption>
+</figure>
+</div>
+<p>That looks nice but how do we get that into a computer? Luckly for us some really smart people have developed a way to encode that information on relatedness into something called a Newick String. Which was developed by Joseph Felsenstein. We can make our own tree in newick format as follows:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>our_tree <span class="ot">&lt;-</span> phytools<span class="sc">::</span><span class="fu">read.newick</span>(<span class="at">text =</span> <span class="st">"(Duck,(Human,(Dog,Cat)));"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Notice that the string works from the closest related organisms in the innermost parenthesis and then working outword. Let’s take a look at the structure of this tree to really see the inside of the object.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(our_tree)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Phylogenetic tree with 4 tips and 3 internal nodes.
+
+Tip labels:
+  Duck, Human, Dog, Cat
+
+Rooted; no branch lengths.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(our_tree)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 5
+ $ edge       : num [1:6, 1:2] 5 5 6 6 7 7 1 6 2 7 ...
+ $ Nnode      : int 3
+ $ tip.label  : chr [1:4] "Duck" "Human" "Dog" "Cat"
+ $ edge.length: NULL
+ $ node.label : NULL
+ - attr(*, "class")= chr "phylo"
+ - attr(*, "order")= chr "cladewise"</code></pre>
+</div>
+</div>
+<p>These “trees” are really just a series of lists within lists. There are edges that connect nodes (both internal and terminal), there are tip.labels that contain the label of the “leafs” of the tree, and finally there are Nnodes which are the internal nodes of the tree. Notice that a tree will always have a number of nodes that equals ntips - 1.</p>
+<p>Ok let’s actually plot it - the fun part of making any tree - using functions in <code>phytools</code>. Dr.&nbsp;Revell’s package provides and incredible array of plotting types lets use <code>plotTree()</code> for now.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>phytools<span class="sc">::</span><span class="fu">plotTree</span>(<span class="at">tree =</span> our_tree,<span class="at">lwd=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lecture_1_files/figure-html/- first plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Wow that looks pretty nice! Lets make it look even better. I will just do a few simple things and then comment what I am doing to get you started.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(<span class="at">tree =</span> our_tree, <span class="co">#our tree</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">lwd=</span><span class="dv">6</span>, <span class="co"># changed the line width setting</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">ftype=</span><span class="st">"i"</span>) <span class="co"># made the font italics. </span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co">#now I am goint to save the x/y coordinates of the tree</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>pp <span class="ot">&lt;-</span> pp<span class="ot">&lt;-</span><span class="fu">get</span>(<span class="st">"last_plot.phylo"</span>,<span class="at">envir=</span>.PlotPhyloEnv)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># now plot another tree ontop of our first one to make an outline affect. </span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTree</span>(<span class="at">tree =</span> our_tree, <span class="co"># again our tree</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">lwd=</span><span class="dv">3</span>, <span class="co"># change the line width</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">color=</span><span class="st">"grey"</span>, <span class="co"># make it a specific color</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>         <span class="at">add=</span>T, <span class="co">#plot it on top of our existing plot</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlim=</span>pp<span class="sc">$</span>x.lim, <span class="co">#use the coordinates for the other </span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylim=</span>pp<span class="sc">$</span>y.lim, <span class="co"># use the coordinates for the other </span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">ftype=</span><span class="st">"off"</span>) <span class="co"># turn off the text on tip.labels</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># add a little label. Don't worry we will learn to do this</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="at">text =</span> <span class="st">"Figure 1: 'Our silly first tree'"</span>,<span class="at">side =</span> <span class="dv">1</span>,</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">line =</span> <span class="sc">-</span><span class="fl">3.5</span>,</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">adj =</span> .<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lecture_1_files/figure-html/- final plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="closing-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="closing-remarks">Closing Remarks:</h2>
+<p>This was week one! Wow so simple right? Yes it was thats the beauty of it. We will begin to work with much more complicated material in due time. For now relax and take it all in.</p>
+<p><strong>Read Chapters 1 of “Learning from Trees” and Chapter 1 of “Phytools” before next time.</strong></p>
+</section>
+<section id="challenge-problem" class="level2">
+<h2 class="anchored" data-anchor-id="challenge-problem">Challenge problem:</h2>
+<p>Can you create a phylogeny of the following taxa using a newick string?</p>
+<p>Here are the names you should use. I left them in their latin form just for fun. I would recommend Googling them to find their identity.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>challenge.names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Bos_taurus"             "Carassius_auratus"      "Carcharodon_carcharias"
+ [4] "Homo_sapiens"           "Iguana_iguana"          "Latimeria_chalumnae"   
+ [7] "Lemur_catta"            "Megaptera_novaeangliae" "Myotis_lucifugus"      
+[10] "Sus_scrofa"             "Turdus_migratorius"    </code></pre>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
