@@ -7,13 +7,15 @@ lightbox: True
 
 I have written extensively on different resources pertaining to working with phylogenetic data and trees on my research website [(here)](https://jonathan-dain-42.github.io/The-Duck-Tapes/Blog_Posts/2024-06-27/2024-06-27.html). Those interested should check it out and explore the rest of the blog posts there (there are phylogenies).
 
-However for the sake of streamlining this course I will point you to three key resources if you are starting from ground zero or the root of the tree :)
+However for the sake of streamlining this course I will point you to a few key resources if you are starting from ground zero or the root of the tree :)
 
 ### In terms of Books:
 
+-   [Phylogenetic Comparative Methods in R](https://press.princeton.edu/books/ebook/9780691219042/phylogenetic-comparative-methods-in-r) by Liam Revell and Luke Harmon. [An amazing book that is where I started learning how to understand and analyze phylogenetic trees. This book has amazing examples some of which have helped me design this course. This is very code focused and should be coupled with a 'theory' based book like below.]
+
 -   [Learning From Trees](https://lukejharmon.github.io/pcm/) by Luke Harmon. [An excellent book on learning the basics and theory in the field of phylogenetic comparative methods.]{.underline}
 
--   [Phylogenetic Comparative Methods in R](https://peerj.com/articles/16505/) by Liam Revell and Luke Harmon. [An amazing R package that is constantly "evolving" and gaining new functions all the time. This package also makes plotting phylogenies wonderful]{.underline}
+-   [The Phytools R Package](https://peerj.com/articles/16505/) by Liam Revell. [An amazing R package that is constantly "evolving" and gaining new functions all the time. This package also makes plotting phylogenies wonderful]{.underline}
 
 -   [The Phytools Blog](http://blog.phytools.org/) by Liam Revell [An awesome way to learn more about working with the R package Phytools, in addition to keeping up to date with the new functions and tools]{.underline}
 
@@ -31,4 +33,4 @@ By the end of the course you should feel comfortable with the following tasks:
 -   Have some fun figures to show your friends and family.
 -   A new appreciation for the world around you and how it all fits together.
 
-Finally here is the "formal" course syllabus as a [PDF](). 
+More detaisl about the course can be found in the Course Syllabus tab. 

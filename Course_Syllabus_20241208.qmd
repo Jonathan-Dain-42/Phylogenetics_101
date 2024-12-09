@@ -1,0 +1,101 @@
+--- 
+title: "Course Syllabus for Phylogenetics 101"
+author:
+  - name: Jonathan Dain
+    url: https://jonathan-dain-42.github.io/The-Duck-Tapes/
+    affiliation: VirusPlusLab at UMass Boston
+    affiliation-url: https://www.theviruspluslab.com/
+toc: TRUE
+format: html
+---
+
+## Proffessor Information:
+
+Jonathan Dain (he/him)
+
+Email: jonathan.dain001@umb.edu
+
+Office Hours: By appointment
+
+Office: UMass Boston, Integrated Sciences Center, Room 3200, Desk 15
+
+## Course Description:
+
+> "Nothing in evolution makes sense except when seen in the light of phylogeny." - Jay Savage
+
+<!-- Jay Savage was an evolutionary biologist that worked on amphibians and reptiles in Central America. Fun fact he visited a poster that I presented at the Joint Meeting of Ichthyology and Herpetology 2019. -->
+
+This quote portrays something powerful. In a nutshell, as I hope we will see during this course the genetic relationships between organism which yes is often depicted as a phylogenetic tree contain alot of information. So much information that Jay Savage spoke this now famous quote (Fun fact I met him briefly at the Joint Meeting of Ichthyology and Herpetology 2019, where I was presenting a poster). Our task is simply to make use of, understand, and evaluate the information that is contained both within the tree and is responsible for the genesis of the tree. This is easier said than done but there has been considerable work done to elucidate the factors that result in the relationships we see depicted in a tree. 
+
+Throughout this course we will be diving into the vast world of phylogenetics and by extension phylogenetic comparative methods. My goal is to teach you the basics of the phylogenetic inference and analysis, and a greater appreciation of the world around you. 
+
+## Course Structure: 
+
+This course will be structured into 12 weeks. Each week will have two lectures each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be book chapters recommended each week and I heavily recommend reading them before beginning the material each week.
+
+We will be working in the [R](https://www.r-project.org/about.html) computing environment for the first half of our material, while in the second half we will move out of R and into a software called [BEAST](https://beast.community/index.html) or Bayesian Evolutionary Analysis [by] Sampling Trees. In each of these we will be working with real datasets that have either been simplified for use in this course or represent areas of active development and research. 
+
+## Learning Goals:
+
+By the end of the course you should feel comfortable with the following tasks:
+
+-   Loading phylogenetic data into the R computing environment and plotting it in various formats.
+-   The basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting.
+-   Utilizing various methods from the domain of "Phylogenetic Comparative Methods" to answer questions about phenotypic evolution.
+-   Develop a small analysis of your own design, perform the analysis, and develop it into a report.
+-   Have some fun figures to show your friends and family.
+-   A new appreciation for the world around you and how it all fits together.
+
+## How to succeed in this course:
+
+1. Take your time. Learn the material step by step and when you have questions reach out to either me or spend some time doing additional reading.  
+
+2. Read the material that is recommended each week. This is complex material and it took me a while to 'master' it. 
+
+3. Have patience with your coding skills. It is like learning a new language that we are pairing with learning the language of phylogenetics. Give yourself grace and keep on keeping on. 
+
+4. Utilize the internet when you run into a concept that challenging to grasp. It took me several different passes, across different proffessors, books, and blogs to understand some of these concepts. If what I am saying isn't clicking look for a different explanation that might click better and then come back. 
+
+5. Have fun! I try my best to be witty and punny and I hope that makes this a little easier. Try to enjoy the learning process. 
+
+## Grading: 
+
+If you are taking this for credit at UMass Boston the grading scale looks like this:  
+
+-   20% Participating in the online discussion board each week. 
+
+-   40% Completing the exercises inside of each lesson and submitting a knitted quarto document. 
+
+-   40% Completion of your own project utilizing the skills learned in this course. 
+
+If you are taking this course asynchronously online through my Github, it is more honors based. You will not be 'graded' but you will get out what you put into the course. I recommend taking notes and acting as if you were getting a grade. 
+
+### [Below content is specific to taking this course with UMass Boston]{.underline}
+
+## Accomodations: 
+
+The University of Massachusetts Boston is committed to creating learning environments that
+are inclusive and accessible. If you have a personal circumstance that will impact your learning
+and performance in this class, please let me know as soon as possible, so we can discuss the
+best ways to meet your needs and the requirements of the course. If you have a documented
+disability, or would like guidance about navigating support services, contact the Ross Center for
+Disability Services by email (ross.center@umb.edu), phone (617-287-7430), or in person
+(Campus Center, UL Room 211). To receive accommodations, students must be registered with
+the Ross Center and must request accommodations each semester that they are in attendance
+at the university. For more information visit: www.rosscenter.umb.edu. Please note that the
+Ross Center will provide a letter for your instructor with information about your
+accommodation only and not about your specific disability.
+
+## Academic Integrity and Student Code of Conduct:
+
+Education at the University of Massachusetts Boston is sustained by academic integrity.
+Academic integrity requires that all members of the campus community are honest,
+trustworthy, responsible, respectful, and fair in academic work at the university. As part of
+being educated here, students learn, exercise, increase, and uphold academic integrity.
+Academic integrity is essential within all classrooms, in the many spaces where academic work
+is carried out by all members of the UMass Boston community, and in our local and global
+communities where the value of this education fulfills its role as a public good. Students are
+expected to adhere to the Student Code of Conduct, including policies about academic
+integrity, delineated in the University of Massachusetts Boston Graduate Studies Bulletin,
+Undergraduate Catalog, and relevant program student handbook(s), linked at
+www.umb.edu/academics/academic_integrity.

@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "Course Resources",
     "section": "",
-    "text": "Welcome to the world of trees and data!\nI have written extensively on different resources pertaining to working with phylogenetic data and trees on my research website (here). Those interested should check it out and explore the rest of the blog posts there (there are phylogenies).\nHowever for the sake of streamlining this course I will point you to three key resources if you are starting from ground zero or the root of the tree :)\n\n\nIn terms of Books:\n\nLearning From Trees by Luke Harmon. An excellent book on learning the basics and theory in the field of phylogenetic comparative methods.\nPhylogenetic Comparative Methods in R by Liam Revell and Luke Harmon. An amazing R package that is constantly “evolving” and gaining new functions all the time. This package also makes plotting phylogenies wonderful\nThe Phytools Blog by Liam Revell An awesome way to learn more about working with the R package Phytools, in addition to keeping up to date with the new functions and tools\nDecoding Genomes: From Sequences to Phylodynamics by Tanja Stadler, Carsten Magnus, Timothy Vaughan, Joëlle Barido-Sottani, Veronika Bošková, Jana S. Huisman, Jūlija Pečerska. A recent book but from the intro chapters that I have read so far it is very approachable and informative. I love the idea of explaining the whole workflow.\n\n\n\nCourse Structure\nThis course will be structured into 12 weeks each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be assigned book chapters each week and I recommend reading them before beginning the material each week.\nBy the end of the course you should feel comfortable with the following tasks:\n\nLoading phylogenetic data into the R computing environment and plotting it in various formats.\nThe basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting.\nUtilizing various methods from the domain of “Phylogenetic Comparative Methods” to answer questions about phenotypic evolution.\nHave some fun figures to show your friends and family.\nA new appreciation for the world around you and how it all fits together.\n\nFinally here is the “formal” course syllabus as a PDF."
+    "text": "Welcome to the world of trees and data!\nI have written extensively on different resources pertaining to working with phylogenetic data and trees on my research website (here). Those interested should check it out and explore the rest of the blog posts there (there are phylogenies).\nHowever for the sake of streamlining this course I will point you to a few key resources if you are starting from ground zero or the root of the tree :)\n\n\nIn terms of Books:\n\nPhylogenetic Comparative Methods in R by Liam Revell and Luke Harmon. [An amazing book that is where I started learning how to understand and analyze phylogenetic trees. This book has amazing examples some of which have helped me design this course. This is very code focused and should be coupled with a ‘theory’ based book like below.]\nLearning From Trees by Luke Harmon. An excellent book on learning the basics and theory in the field of phylogenetic comparative methods.\nThe Phytools R Package by Liam Revell. An amazing R package that is constantly “evolving” and gaining new functions all the time. This package also makes plotting phylogenies wonderful\nThe Phytools Blog by Liam Revell An awesome way to learn more about working with the R package Phytools, in addition to keeping up to date with the new functions and tools\nDecoding Genomes: From Sequences to Phylodynamics by Tanja Stadler, Carsten Magnus, Timothy Vaughan, Joëlle Barido-Sottani, Veronika Bošková, Jana S. Huisman, Jūlija Pečerska. A recent book but from the intro chapters that I have read so far it is very approachable and informative. I love the idea of explaining the whole workflow.\n\n\n\nCourse Structure\nThis course will be structured into 12 weeks each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be assigned book chapters each week and I recommend reading them before beginning the material each week.\nBy the end of the course you should feel comfortable with the following tasks:\n\nLoading phylogenetic data into the R computing environment and plotting it in various formats.\nThe basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting.\nUtilizing various methods from the domain of “Phylogenetic Comparative Methods” to answer questions about phenotypic evolution.\nHave some fun figures to show your friends and family.\nA new appreciation for the world around you and how it all fits together.\n\nMore detaisl about the course can be found in the Course Syllabus tab."
   },
   {
     "objectID": "index.html",
@@ -117,5 +117,68 @@
     "title": "Week One/Lecture Two",
     "section": "Wrapping up",
     "text": "Wrapping up\nOk so we covered alot in this lesson. Granted it was mostly programming but I am hoping that you are getting more comfortable with working in the R environment. Next week we will actually be digging into what we can learn from phylogenetic trees, and how we can compare species with them.\nFor now I leave you with this challenge. Using the data('eel.tree') in the Phytools package I want you to generate three different visualizations of the tree. Some ideas might be playing with line colors, overlapping points, changing the orientation, or making something more complex. The world is your oyster.\nif you need help, I recommend the ?plotTree page for some ideas. Try to develope the code yourself rather than copy and pasting."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html",
+    "href": "Course_Syllabus_20241208.html",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "",
+    "text": "Jonathan Dain (he/him)\nEmail: jonathan.dain001@umb.edu\nOffice Hours: By appointment\nOffice: UMass Boston, Integrated Sciences Center, Room 3200, Desk 15"
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#course-description",
+    "href": "Course_Syllabus_20241208.html#course-description",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "Course Description:",
+    "text": "Course Description:\n\n“Nothing in evolution makes sense except when seen in the light of phylogeny.” - Jay Savage\n\n\nThis quote portrays something powerful. In a nutshell, as I hope we will see during this course the genetic relationships between organism which yes is often depicted as a phylogenetic tree contain alot of information. So much information that Jay Savage spoke this now famous quote (Fun fact I met him briefly at the Joint Meeting of Ichthyology and Herpetology 2019, where I was presenting a poster). Our task is simply to make use of, understand, and evaluate the information that is contained both within the tree and is responsible for the genesis of the tree. This is easier said than done but there has been considerable work done to elucidate the factors that result in the relationships we see depicted in a tree.\nThroughout this course we will be diving into the vast world of phylogenetics and by extension phylogenetic comparative methods. My goal is to teach you the basics of the phylogenetic inference and analysis, and a greater appreciation of the world around you."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#course-structure",
+    "href": "Course_Syllabus_20241208.html#course-structure",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "Course Structure:",
+    "text": "Course Structure:\nThis course will be structured into 12 weeks. Each week will have two lectures each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be book chapters recommended each week and I heavily recommend reading them before beginning the material each week.\nWe will be working in the R computing environment for the first half of our material, while in the second half we will move out of R and into a software called BEAST or Bayesian Evolutionary Analysis [by] Sampling Trees. In each of these we will be working with real datasets that have either been simplified for use in this course or represent areas of active development and research."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#learning-goals",
+    "href": "Course_Syllabus_20241208.html#learning-goals",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "Learning Goals:",
+    "text": "Learning Goals:\nBy the end of the course you should feel comfortable with the following tasks:\n\nLoading phylogenetic data into the R computing environment and plotting it in various formats.\nThe basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting.\nUtilizing various methods from the domain of “Phylogenetic Comparative Methods” to answer questions about phenotypic evolution.\nDevelop a small analysis of your own design, perform the analysis, and develop it into a report.\nHave some fun figures to show your friends and family.\nA new appreciation for the world around you and how it all fits together."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#how-to-succeed-in-this-course",
+    "href": "Course_Syllabus_20241208.html#how-to-succeed-in-this-course",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "How to succeed in this course:",
+    "text": "How to succeed in this course:\n\nTake your time. Learn the material step by step and when you have questions reach out to either me or spend some time doing additional reading.\nRead the material that is recommended each week. This is complex material and it took me a while to ‘master’ it.\nHave patience with your coding skills. It is like learning a new language that we are pairing with learning the language of phylogenetics. Give yourself grace and keep on keeping on.\nUtilize the internet when you run into a concept that challenging to grasp. It took me several different passes, across different proffessors, books, and blogs to understand some of these concepts. If what I am saying isn’t clicking look for a different explanation that might click better and then come back.\nHave fun! I try my best to be witty and punny and I hope that makes this a little easier. Try to enjoy the learning process."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#grading",
+    "href": "Course_Syllabus_20241208.html#grading",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "Grading:",
+    "text": "Grading:\nIf you are taking this for credit at UMass Boston the grading scale looks like this:\n\n20% Participating in the online discussion board each week.\n40% Completing the exercises inside of each lesson and submitting a knitted quarto document.\n40% Completion of your own project utilizing the skills learned in this course.\n\nIf you are taking this course asynchronously online through my Github, it is more honors based. You will not be ‘graded’ but you will get out what you put into the course. I recommend taking notes and acting as if you were getting a grade.\n\nBelow content is specific to taking this course with UMass Boston"
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#accomodations",
+    "href": "Course_Syllabus_20241208.html#accomodations",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "Accomodations:",
+    "text": "Accomodations:\nThe University of Massachusetts Boston is committed to creating learning environments that are inclusive and accessible. If you have a personal circumstance that will impact your learning and performance in this class, please let me know as soon as possible, so we can discuss the best ways to meet your needs and the requirements of the course. If you have a documented disability, or would like guidance about navigating support services, contact the Ross Center for Disability Services by email (ross.center@umb.edu), phone (617-287-7430), or in person (Campus Center, UL Room 211). To receive accommodations, students must be registered with the Ross Center and must request accommodations each semester that they are in attendance at the university. For more information visit: www.rosscenter.umb.edu. Please note that the Ross Center will provide a letter for your instructor with information about your accommodation only and not about your specific disability."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#academic-integrity-and-student-code-of-conduct",
+    "href": "Course_Syllabus_20241208.html#academic-integrity-and-student-code-of-conduct",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "Academic Integrity and Student Code of Conduct:",
+    "text": "Academic Integrity and Student Code of Conduct:\nEducation at the University of Massachusetts Boston is sustained by academic integrity. Academic integrity requires that all members of the campus community are honest, trustworthy, responsible, respectful, and fair in academic work at the university. As part of being educated here, students learn, exercise, increase, and uphold academic integrity. Academic integrity is essential within all classrooms, in the many spaces where academic work is carried out by all members of the UMass Boston community, and in our local and global communities where the value of this education fulfills its role as a public good. Students are expected to adhere to the Student Code of Conduct, including policies about academic integrity, delineated in the University of Massachusetts Boston Graduate Studies Bulletin, Undergraduate Catalog, and relevant program student handbook(s), linked at www.umb.edu/academics/academic_integrity."
+  },
+  {
+    "objectID": "Course_Syllabus_20241208.html#proffessor-information",
+    "href": "Course_Syllabus_20241208.html#proffessor-information",
+    "title": "Course Syllabus for Phylogenetics 101",
+    "section": "",
+    "text": "Jonathan Dain (he/him)\nEmail: jonathan.dain001@umb.edu\nOffice Hours: By appointment\nOffice: UMass Boston, Integrated Sciences Center, Room 3200, Desk 15"
   }
 ]
