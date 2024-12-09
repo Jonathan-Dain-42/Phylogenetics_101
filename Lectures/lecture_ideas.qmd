@@ -1,0 +1,45 @@
+---
+title: "blog post title"
+description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
+author:
+  - name: Jonathan Dain
+    url: https://jonathan-dain-42.github.io/The-Duck-Tapes/
+    affiliation: VirusPlusLab at UMass Boston
+    affiliation-url: https://www.theviruspluslab.com/
+date: 10-24-2022
+categories: [All] # self-defined categories
+draft: TRUE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+Hey there JBD! Let this particular qmd file serve as a repo for your ideas for this particular course. 
+
+## IDEAS:
+
+- Using Stochastic character mapping to identify markov jumps between states! Maybe you can prune down your NA Flu "with Poultry" tree to 200 taxa and then do a Markov Jump Reward analysis to generate something. Or potentially you can use the BIO 607 tree that you already have ancestral state estimation on and do both a stochasic map and ancestral state estimation. Actually this is probably the best idea. Its a small dataset and it will work you have the result from it already. 
+
+
+I will also use this quarto doc to make random things for my course. 
+
+```{r}
+#' I need a course banner for CANVAS so here you go. 
+library(phytools)
+
+data("mammal.tree")
+
+plotTree(tree = ladderize(mammal.tree),type="phylogram",ftype="i",fsize=0.8,arc_height=0.5)
+
+fastBM(tree = mammal.tree,a = 1,sig2 = 1)
+
+contMap(tree = ladderize(mammal.tree),x = fastBM(tree = mammal.tree,a = 1,sig2 = 1),plot=F)->obj
+
+
+plot(obj,type="arc",arc_height=0.1,fsize=0.8,offset=5,ftype="off",lwd=10,legend=F)
+
+
+png(filename="/Users/jonathandain/My_Files/My_Code/Phylogenetics_101/Course_Banner_Tree.png",height = 1200,width = 2500,units = "px",res = 300)
+plot(obj,type="arc",arc_height=0.1,fsize=0.8,offset=5,ftype="off",lwd=10,legend=F)
+plotrix::boxed.labels(x = 1,y=30,labels = "Phylogenetics 101\n with Jonathan Dain",bg = "grey",border = "black",cex=2,ypad=1.4)
+dev.off()
+
+```
+

@@ -3,9 +3,9 @@ title: "Course Resources"
 lightbox: True
 ---
 
-### Welcome to the world of trees and data! 
+### Welcome to the world of trees and data!
 
-I have written extensively on different resources pertaining to working with phylogenetic data and trees on my research website [(here)](https://jonathan-dain-42.github.io/The-Duck-Tapes/Blog_Posts/2024-06-27/2024-06-27.html). Those interested should check it out and explore the rest of the blog posts there (there are phylogenies). 
+I have written extensively on different resources pertaining to working with phylogenetic data and trees on my research website [(here)](https://jonathan-dain-42.github.io/The-Duck-Tapes/Blog_Posts/2024-06-27/2024-06-27.html). Those interested should check it out and explore the rest of the blog posts there (there are phylogenies).
 
 However for the sake of streamlining this course I will point you to three key resources if you are starting from ground zero or the root of the tree :)
 
@@ -21,12 +21,14 @@ However for the sake of streamlining this course I will point you to three key r
 
 ### Course Structure
 
-This course will be structured into 12 weeks each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be assigned book chapters each week and I recommend reading them before beginning the material each week. 
+This course will be structured into 12 weeks each with their own lessons and challenge problems. Each week will build on what was learned in the week prior and add to the level of complexity that you are mastering. There will be assigned book chapters each week and I recommend reading them before beginning the material each week.
 
-By the end of the course you should feel comfortable with the following tasks:  
+By the end of the course you should feel comfortable with the following tasks:
 
--   Loading phylogenetic data into the R computing environment and plotting it in various formats. 
--   The basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting. 
--   Utilizing various methods from the domain of "Phylogenetic Comparative Methods" to answer questions about phenotypic evolution. 
+-   Loading phylogenetic data into the R computing environment and plotting it in various formats.
+-   The basics of phylogenetic tree inference methods in both a maximum likelihood setting and a bayesian setting.
+-   Utilizing various methods from the domain of "Phylogenetic Comparative Methods" to answer questions about phenotypic evolution.
 -   Have some fun figures to show your friends and family.
--   A new appreciation for the world around you and how it all fits together. 
+-   A new appreciation for the world around you and how it all fits together.
+
+Finally here is the "formal" course syllabus as a [PDF](). 
